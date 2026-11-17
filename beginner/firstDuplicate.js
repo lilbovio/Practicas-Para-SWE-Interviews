@@ -1,4 +1,4 @@
-function firstDuplicate(numbers) {
+export function firstDuplicate(numbers) {
     let visited = new Set();
 
     for (let i = 0; i < numbers.length; i++) {

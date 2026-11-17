@@ -1,8 +1,11 @@
 /**
+ * Remove adjacent upper/lowercase versions of the same ASCII letter.
+ * Return the length of the reduced string.
+ * Time: O(n); space: O(n).
  * @param {string} s
- * @return {number}
+ * @returns {number}
  */
-var makeStringGood = function(s) {
+export function makeStringGood(s) {
     const stack = [];
     for (let i = 0; i < s.length; i++) {
         const char = s[i];
@@ -13,4 +16,4 @@ var makeStringGood = function(s) {
         }
     }
     return stack.length;
-};
+}

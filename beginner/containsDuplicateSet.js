@@ -1,4 +1,10 @@
-function containsDuplicate(numbers) {
+/**
+ * Return true if any value occurs more than once, using a Set for lookups.
+ * Time: O(n) on average; space: O(n).
+ * @param {number[]} numbers
+ * @returns {boolean}
+ */
+export function containsDuplicate(numbers) {
     let visited = new Set();
 
     for (let i = 0; i < numbers.length; i++) {
