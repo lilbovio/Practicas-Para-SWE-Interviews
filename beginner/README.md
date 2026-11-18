@@ -19,6 +19,10 @@ Start here if you are learning JavaScript problem solving or writing unit tests.
 | [First non-repeating character](firstNonRepeatingChar.js) | A second frequency-map implementation |
 | [Age validation](edad.js) | Input validation and boundary testing |
 | [Palindrome (Spanish)](palindromo.js) | Normalization and validation |
+| [FizzBuzz](fizzBuzz.js) | Branch order: check multiples of both values first |
+| [Valid anagram](validAnagram.js) | Frequency maps and case sensitivity |
+| [Remove duplicates from a sorted array](removeDuplicatesSorted.js) | In-place two pointers and the unique-prefix contract |
+| [Second largest](secondLargest.js) | Single-pass tracking and duplicates of the maximum |
 
 The duplicate-check exercises include both a nested-loop implementation and a faster `Set` implementation so you can compare their complexity. Some original exercises and tests are in Spanish.
 
