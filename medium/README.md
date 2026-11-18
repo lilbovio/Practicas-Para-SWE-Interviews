@@ -14,6 +14,13 @@ These challenges introduce data structures and strategies that reduce repeated w
 | [Longest unique substring](longestUniqueSubstring.js) | Sliding window |
 | [K-difference pairs](k-diffInPairs.js) | Counting unique pairs with a frequency map |
 | [Make string good](makeStringGood.js) | Stack-based cancellation of adjacent characters |
+| [Binary search](binarySearch.js) | Off-by-one invariants and the "first index at least" variant |
+| [Top K frequent](topKFrequent.js) | Frequency maps and bucket sort |
+| [Product except self](productExceptSelf.js) | Prefix and suffix passes without division |
+| [Subarray sum equals K](subarraySumK.js) | Prefix sums with a map, including negative values |
+| [Min stack](minStack.js) | Stack design with O(1) minimum tracking |
+| [Reverse a linked list and detect a cycle](reverseLinkedList.js) | Pointer manipulation and Floyd's fast/slow pointers |
+| [Debounce](debounce.js) | Timers in JavaScript, tested with fake timers |
 
 ## QA practice
 

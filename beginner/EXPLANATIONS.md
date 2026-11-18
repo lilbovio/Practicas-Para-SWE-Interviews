@@ -70,6 +70,38 @@ Accept an integer age from 18 through 65, inclusive. Non-number values and `NaN`
 - **Test ideas:** just below and above each boundary, both valid endpoints, decimal, negative, `null`, and `NaN`.
 - **QA lesson:** explicitly distinguish invalid input from a valid value that fails the business rule.
 
+## [FizzBuzz](fizzBuzz.js)
+
+Print the numbers from 1 to n, replacing multiples of 3 with "Fizz", multiples of 5 with "Buzz", and multiples of both with "FizzBuzz". The order of the checks matters: test for multiples of 15 first, or every multiple of 15 will match the "Fizz" branch.
+
+- **Complexity:** O(n) time and O(n) space for the result.
+- **Test ideas:** n = 0, n = 5, a multiple of 15 specifically, and checking the total length of the output.
+- **QA lesson:** the bug that ordering causes only appears at one kind of input, so a test must target it on purpose.
+
+## [Valid anagram](validAnagram.js)
+
+Decide whether two strings contain the same characters with the same counts. Count the first string's characters in a map, then subtract for each character of the second. The implementation compares Unicode code points without normalizing them, so a precomposed `é` and `e` followed by a combining accent are different characters. It is also case-sensitive by design.
+
+- **Complexity:** O(n) time and O(k) space, where k is the number of distinct characters.
+- **Test ideas:** rearranged letters, same letters with different counts, different lengths, empty strings, uppercase versus lowercase, and accented characters.
+- **Decision to state out loud:** whether "Listen" and "silent" should count as anagrams. The contract decides, not the algorithm.
+
+## [Remove duplicates from a sorted array](removeDuplicatesSorted.js)
+
+Remove adjacent duplicates in place and return how many unique values remain. A read pointer scans every value, and a write pointer marks where the next kept value goes. Compare each value with the last kept value, not the previous input value.
+
+- **Complexity:** O(n) time and O(1) extra space.
+- **Contract:** only the first k slots matter after the call; later slots may still hold old values.
+- **Test ideas:** no duplicates, all equal values, duplicates at both ends, empty input, and a single value.
+
+## [Second largest](secondLargest.js)
+
+Return the second-largest distinct value, or `null` when there isn't one. Track the largest and second-largest values in one pass. The tricky case is a repeated maximum: `[2, 2, 1]` returns `1`, not `2`.
+
+- **Complexity:** O(n) time and O(1) extra space.
+- **Test ideas:** repeated maximum, all values equal, one value, empty input, negative numbers, and a maximum at both ends.
+- **QA lesson:** a single-pass solution is easy to test only if you write the expected answer for each tricky case first.
+
 ## A testing routine for this level
 
 For each function, write down its input and output contract before coding. Add one normal case, one boundary case, and one case likely to expose an incorrect assumption. Then run the matching `.test.js` file and explain what each assertion protects.

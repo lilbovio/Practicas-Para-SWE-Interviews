@@ -11,6 +11,12 @@ These challenges emphasize careful invariants, edge cases, and performance. Befo
 | [Merge intervals](mergeIntervals.js) | Sorting and interval invariants |
 | [Trapping rain water](trapRainWater.js) | Two pointers and running maxima |
 | [LRU cache](LRUCache.js) | Data structure design and stateful behavior |
+| [Number of islands](numberOfIslands.js) | Grid traversal with BFS or DFS and connectivity rules |
+| [Course schedule](courseSchedule.js) | Topological sort and cycle detection |
+| [Median from a data stream](medianFromStream.js) | Two heaps and invariants under insertion |
+| [Minimum window substring](minWindowSubstring.js) | Sliding window with counts |
+| [Coin change](coinChange.js) | Bottom-up dynamic programming and unreachable states |
+| [Token-bucket rate limiter](rateLimiter.js) | Stateful logic with an injected clock, ideal for controlled-time tests |
 
 ## QA practice
 
